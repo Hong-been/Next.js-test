@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+import {useRouter} from "next/router";
 
 export default function NavBar() {
 	const router = useRouter();
-	// console.log(router);
 
 	return (
 		<nav>
@@ -12,8 +11,10 @@ export default function NavBar() {
 				<Link href="/">
 					<a className={router.pathname === "/" ? "active" : ""}>Home</a>
 				</Link>
-				<Link href="/about">
-					<a className={router.pathname === "/about" ? "active" : ""}>About</a>
+				<Link href="/calender">
+					<a className={router.pathname === "/calender" ? "active" : ""}>
+						calender
+					</a>
 				</Link>
 			</div>
 			<style jsx>{`
